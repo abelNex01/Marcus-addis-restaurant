@@ -1,0 +1,29 @@
+.scroll-btn-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 45px;
+  z-index: 1000;
+}
+
+.scroll-btn {
+  width: 45px;
+  background: transparent;
+  cursor: pointer;
+}
+.scroll-btn:active {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .scroll-btn-wrapper {
+    bottom: 40px;
+    right: 115px;
+  }
+}
+@media (max-width: 480px) {
+  .scroll-btn-wrapper {
+    right: 145px;
+  }
+  .scroll-btn {
+    width: 35px;
+  }
+}

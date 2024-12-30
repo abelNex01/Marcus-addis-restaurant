@@ -1,0 +1,188 @@
+.PrivateDinning {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 20px;
+}
+
+.rows {
+  display: flex;
+  flex: 1;
+  align-items: start;
+  justify-content: start;
+  margin: auto;
+}
+
+.rows img {
+  cursor: pointer;
+}
+
+.textCard {
+  text-align: center;
+  padding: 50px;
+}
+
+.rows p {
+  font-size: 9px;
+}
+.rows h3 {
+  font-family: "Metropolis";
+  font-weight: 100;
+  font-size: 24px;
+}
+.rows h4 {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.row2 {
+  position: relative;
+}
+
+.textCard3 {
+  position: absolute;
+  top: 65%;
+  left: 17%;
+  line-height: 0px;
+}
+
+.textCard3 h3 {
+  font-size: 45px;
+}
+.textCard3 p {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.textCard3 h4 {
+  font-size: 16px;
+}
+
+.textContents h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  margin-bottom: -20px;
+}
+.textContents h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.textContents p {
+  font-size: 12px;
+}
+
+.pizzaMenus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pizzaMenus img {
+  width: 90%;
+  max-width: 420px;
+  height: auto;
+  border: none;
+}
+
+.pizzaMenus.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hideit {
+    position: absolute;
+    top: 58%;
+    left: 61%;
+  }
+  .privateHide {
+    position: absolute;
+    top: 58%;
+    left: 0;
+  }
+  .textCardMod {
+    position: absolute;
+    top: 60%;
+    left: 34%;
+  }
+  .textcardHider {
+    display: none;
+  }
+  .rows {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    justify-content: start;
+    margin: auto;
+    position: relative;
+  }
+
+  .textCard {
+    position: absolute;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .rows p {
+    font-size: 9px;
+  }
+
+  .textCard3 {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    line-height: 0px;
+  }
+
+  .textCard3 p {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+  .textCard3 h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .hideit {
+    display: none;
+  }
+  .privateHide {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    width: 230px;
+  }
+  .privateView {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .bigassimg {
+    margin-top: 190px;
+  }
+
+  .rows {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: start;
+    justify-content: start;
+    margin: auto;
+    position: relative;
+  }
+
+  .textCard {
+    display: none;
+  }
+  .textContents h2 {
+    font-size: 16px;
+  }
+}

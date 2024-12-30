@@ -1,0 +1,30 @@
+#root {
+  min-height: 100vh;
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../src/assets/fonts/MetropolisPersonalUseRegular-nR5LY.ttf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Montserrat-Regular";
+}

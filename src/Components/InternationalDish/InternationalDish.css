@@ -1,0 +1,57 @@
+.InternationalDish {
+  margin: 90px auto;
+  padding: 0 130px;
+  position: relative;
+  height: 100vh;
+  margin-right: 40px;
+  margin-top: 175px;
+}
+
+.next-btn,
+.back-btn {
+  position: absolute;
+  top: 38%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 10px;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: transparent;
+}
+
+.back-btn {
+  left: 20px;
+  margin-left: -20px;
+}
+.next-btn {
+  right: 40px;
+}
+.slider .ulli {
+  display: flex;
+  width: 200%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sliderss {
+  margin-right: -70px;
+  margin-left: -60px;
+}
+
+.titleofMenu h4 {
+  font-size: 30px;
+  line-height: 10px;
+  font-family: "Metropolis";
+  margin-bottom: 10px;
+}
+
+.InternationalDish button {
+  margin: 2px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  font-size: 12px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}

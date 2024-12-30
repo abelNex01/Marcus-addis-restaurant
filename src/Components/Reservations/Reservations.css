@@ -1,0 +1,135 @@
+.Reservations {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  align-items: start;
+  justify-content: start;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.left h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.left p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.left {
+  width: 45%;
+  max-height: 80vh;
+  padding: 40px;
+  background-image: url(../../assets/6/reservationBackground.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.right {
+  width: 50%;
+}
+.right img {
+  width: 725px;
+  border-radius: 20px;
+  margin-left: -62px;
+}
+
+.inputContent {
+  line-height: 30px;
+}
+
+.inputContent input {
+  border: none;
+  border-bottom: 1px solid rgb(109, 109, 109);
+  background-color: transparent;
+  color: white;
+  width: 29%;
+  outline: none;
+  margin-right: 20px;
+  line-height: 33px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.inputContent input::placeholder {
+  color: white;
+  font-size: 12px;
+}
+.textArea {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.textArea textarea {
+  border: none;
+  border-bottom: 1px solid rgb(109, 109, 109);
+  background: transparent;
+  color: white;
+  width: 95%;
+  outline: none;
+  padding: 5px;
+}
+.textArea textarea::placeholder {
+  font-family: "Montserrat-Regular";
+  color: white;
+}
+
+.inputContent button {
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 12;
+  font-weight: bold;
+  margin: 20px;
+  margin-top: 40px;
+}
+.inputContent button:hover {
+  border: 1px solid #695b49;
+  color: white;
+  background: #695b49;
+}
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+  .left {
+    width: 90%;
+  }
+  .inputContent input {
+    width: 28%;
+  }
+  .inputContent button {
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .left {
+    width: 90%;
+    border-radius: 10px;
+  }
+  .inputContent input {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .inputContent button {
+    padding: 7px 15px;
+  }
+  .Reservations {
+    margin-bottom: 30px;
+  }
+}
